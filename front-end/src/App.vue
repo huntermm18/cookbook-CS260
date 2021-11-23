@@ -3,26 +3,30 @@
   <div class="header">
     <router-link to="/">
       <div class="logo">
-        <img src="/ordinary.png">
+        <img class="logo" src="../public/images/Hand-drawn-chef-Clip-art-PNG.png">
       </div>
     </router-link>
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>Hunter's Recipes</h1>
     </div>
+
   </div>
   <div class="content">
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link>
+    <router-link to="/admin"><h1>Edit Library</h1></router-link>
+    <a href="https://github.com/huntermm18/cookbook-CS260">Link to github repository</a>
   </div>
 </div>
 </template>
 
 <style>
+
 html {
   box-sizing: border-box;
 }
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +40,7 @@ body {
 .header {
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
+  background-color: #68a5ff;
   color: #1C454F;
 }
 
@@ -56,9 +60,10 @@ body {
 /* Footer */
 .footer {
   height: 50px;
-  padding: 20px 100px 0px 100px;
+  padding: 20px 100px 40px 100px;
   background: #e3e3e3;
   font-size: 12px;
+  text-align: center;
 }
 
 .footer a {
@@ -71,5 +76,8 @@ h1 {
 
 h2 {
   font-size: 14px;
+}
+.logo {
+  width: 35%;
 }
 </style>
